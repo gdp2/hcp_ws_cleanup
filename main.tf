@@ -4,7 +4,7 @@ cloud {
     ## Required for Terraform Enterprise; Defaults to app.terraform.io for HCP Terraform
     hostname = "app.terraform.io"
    workspaces {
-    name = "123"
+    name = "ws-givwttai3tEi22ge"
     }
   }
   required_providers {
