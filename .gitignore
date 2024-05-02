@@ -33,6 +33,6 @@ override.tf.json
 .terraformrc
 terraform.rc
 
-ws_data.csv
+*.csv
 main.tf
 
