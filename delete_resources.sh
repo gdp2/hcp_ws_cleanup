@@ -15,5 +15,5 @@ for ws in $ws_list; do
     envsubst <main.tf.tmpl >main.tf
 
     terraform init
-    terraform plan -var-file="terraform.tfvars" -no-color > outputs/$ws.plan || echo $ws >> errored_ws.csv
+    terraform destroy  -auto-approve -no-color > outputs/$ws.plan || echo $ws >> errored_ws.csv
 done

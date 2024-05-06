@@ -9,7 +9,7 @@ workspace_name = []
 resource_count = []
 created_at = []
 def fetch_data(page):
-    url = f"https://app.terraform.io/api/v2/organizations/{org}/workspaces?page[number]={page}&page[size]=80&search[wildcard-name]=ws-*"
+    url = f"https://app.terraform.io/api/v2/organizations/{org}/workspaces?page[number]={page}&page[size]=80&search[wildcard-name]=cit-switchboard-ci-*"
     headers = {"Authorization": f"Bearer {token}"}
     response = requests.get(url, headers=headers)
     response.raise_for_status()
