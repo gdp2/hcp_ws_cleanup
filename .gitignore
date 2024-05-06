@@ -35,4 +35,5 @@ terraform.rc
 
 *.csv
 main.tf
+outputs/*
 
